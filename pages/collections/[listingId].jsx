@@ -140,7 +140,7 @@ export default function ListingPage() {
             <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
             {listing.buyoutCurrencyValuePerToken.symbol}
           </h4>
-                    <span class={styles.nft_description}>{listing.asset.description}</span>
+                    <span className={styles.nft_description}>{listing.asset.description}</span>
                 <div className={styles.spacer}></div>
           <div className={styles.nft_bodyBtn}>
             <button
