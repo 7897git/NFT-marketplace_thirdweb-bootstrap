@@ -127,7 +127,7 @@ export default function ListingPage() {
             height={500}
           />
         </div>
-    <div className="card bg-dark w-100">
+    <div className="card bg-dark w-100 text-bg-dark">
         <div className={styles.rightListing}>
     <div className={styles.nft_titlePrice}>
           <h2>{listing.asset.name}</h2>
