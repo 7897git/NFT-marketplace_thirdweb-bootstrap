@@ -1,0 +1,56 @@
+.cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: #121222;
+}
+
+.dropdown_item {
+    display: flex;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.metamask {
+    background: url(../../public/icons/metamask.svg);
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.walletconnect {
+    background: url(../../public/icons/walletconnect.svg);
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.coinbase {
+    background: url(../../public/icons/coinbase.svg);
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+

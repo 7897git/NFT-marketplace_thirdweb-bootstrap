@@ -1,0 +1,17 @@
+.banner {
+    background: #fff;
+    color: #000;
+    padding: 130px 20px;
+    border-radius: 16px;
+    background-image: url('https://gateway.ipfscdn.io/ipfs/QmW95JRwNK9djmqf7jBiqonCtZdJMcxeoZdFeTzprBCEPv/0.jpg');
+    .avatar {
+        position: absolute;
+        top: 75px;
+        @include mobile {top: 75px;}
+        .img_fluid {
+            border-radius: 50%;
+            width: 80px;
+            box-shadow: -2px -2px 19px -2px #666, 2px -2px 10px -2px #666;
+        }
+    }
+}
