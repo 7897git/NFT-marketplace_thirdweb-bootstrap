@@ -19,12 +19,12 @@ export default function Footer() {
     </div>
   </header>
 
-  <main className="px-3">
+  <main className="px-3 text-center text-white">
     <h1>Thirdweb NFT Marketplace</h1>
     <p className="lead">Discover, Buy, and Sell extraordinary NFT</p>
           {!loadingMetadata ? (
             <>
-    <p className="lead">
+    <p className="lead m-auto">
       <a role="button" className="btn btn-lg btn-secondary fw-bold border-white bg-white text-bg-light" data-bs-toggle="dropdown">SignIn Wallet</a>
 
   <ul className="dropdown-menu">
@@ -42,7 +42,7 @@ export default function Footer() {
           )}
   </main>
 
-  <footer className="mt-auto text-white-50">
+  <footer className="mt-auto text-center text-white-50">
     <p>UnknownNFT <Link href="/"><a className="text-white">marketplace</a></Link>, by <Link href="https://thirdeweb.com"><a className="text-white">thirdweb SDK</a></Link>.</p>
   </footer>
 </div>

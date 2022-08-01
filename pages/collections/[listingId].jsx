@@ -130,7 +130,7 @@ export default function ListingPage() {
     <div className="card bg-dark w-100">
         <div className={styles.rightListing}>
     <div className={styles.nft_titlePrice}>
-          <h1>{listing.asset.name}</h1>
+          <h2>{listing.asset.name}</h2>
           <p>
             Owned by <b>{listing.sellerAddress?.slice(0, 6)}</b>
           </p>
@@ -140,7 +140,7 @@ export default function ListingPage() {
             <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
             {listing.buyoutCurrencyValuePerToken.symbol}
           </h4>
-<span>{listing.asset.description}</span>
+                    <span class={styles.nft_description}>{listing.asset.description}</span>
                 <div className={styles.spacer}></div>
           <div className={styles.nft_bodyBtn}>
             <button

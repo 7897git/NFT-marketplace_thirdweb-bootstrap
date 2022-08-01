@@ -47,3 +47,23 @@ body {
 a {text-decoration: none;}
 
 input:hover&&input:focus {border: 1px dotted #fff;border-color: #418dff;background-color: transparent;}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 8px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #121222; 
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

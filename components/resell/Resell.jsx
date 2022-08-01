@@ -100,7 +100,7 @@ export default function Resell() {
       <div className={styles.container}>
         {/* Form Section */}
         <div className={styles.collectionContainer}>
-<div className="card bg-dark p-2 w-100">
+<div className="card bg-dark p-2 w-100 text-bg-dark">
           <h4 className={styles.ourCollection}>
             Reselling your NFT to the marketplace use your contract
           </h4>

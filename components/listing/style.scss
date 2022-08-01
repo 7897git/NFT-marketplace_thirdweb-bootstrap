@@ -82,7 +82,12 @@
         align-items: center;
         grid-gap: 30px;
       }
-
+            .nft_description {
+                text-align: left !important;
+                border: 1px dotted;
+                padding: 3px 10px;
+                border-radius: 5px;
+            }
         .textInput {
           width: 100%;
           background-color: #0dcaf0;

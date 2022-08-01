@@ -178,7 +178,7 @@ const Create = () => {
           </h3>
 </div>
 <div className={styles.nft_upload}>
-<div className="card w-100 bg-dark">
+<div className="card w-100 bg-dark text-bg-dark">
           {file ? (
             <Image
               src={URL.createObjectURL(file)}
@@ -200,7 +200,7 @@ const Create = () => {
             </div>
           )}
 </div>
-<div className="card w-100 p-2 bg-dark">
+<div className="card w-100 p-2 bg-dark text-bg-dark">
 
           {/* Toggle between direct listing and auction listing */}
           <div className={styles.listingTypeContainer}>
@@ -249,7 +249,7 @@ const Create = () => {
             name="description"
             className="form-control mb-3"
             placeholder="Description"
-            cols="28" rows="5"
+            cols="28" rows="3"
             style={{ minWidth: "320px" }}
           />
 
