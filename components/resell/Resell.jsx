@@ -95,14 +95,16 @@ export default function Resell() {
     }
   }
 
-  return (<form onSubmit={(e) => handleCreateListing(e)}>
+  return (
+<form onSubmit={(e) => handleCreateListing(e)}>
       <div className={styles.container}>
         {/* Form Section */}
         <div className={styles.collectionContainer}>
-          <h3 className={styles.ourCollection}>
-            Upload your NFT to the marketplace:
-          </h3>
-
+<div className="card bg-dark p-2 w-100">
+          <h4 className={styles.ourCollection}>
+            Reselling your NFT to the marketplace use your contract
+          </h4>
+            <div className={styles.spacerBottom}></div>
           {/* Toggle between direct listing and auction listing */}
           <div className={styles.listingTypeContainer}>
             <input
@@ -127,12 +129,13 @@ export default function Resell() {
               Auction Listing
             </label>
           </div>
+            <div className={styles.spacerBottom}></div>
 
           {/* NFT Contract Address Field */}
           <input
             type="text"
             name="contractAddress"
-            className={styles.textInput}
+            className="form-control mb-3"
             placeholder="NFT Contract Address"
           />
 
@@ -140,7 +143,7 @@ export default function Resell() {
           <input
             type="text"
             name="tokenId"
-            className={styles.textInput}
+            className="form-control mb-3"
             placeholder="NFT Token ID"
           />
 
@@ -148,9 +151,11 @@ export default function Resell() {
           <input
             type="text"
             name="price"
-            className={styles.textInput}
+            className="form-control mb-3"
             placeholder="Sale Price"
           />
+
+            <div className={styles.spacer}></div>
 
           <button
             type="submit"
@@ -159,6 +164,7 @@ export default function Resell() {
           >
             List NFT
           </button>
+</div>
         </div>
       </div>
     </form>

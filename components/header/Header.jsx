@@ -1,5 +1,6 @@
 import { useAddress, useMetamask, useDisconnect } from "@thirdweb-dev/react";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useRef, useState } from "react";
 import { RiLogoutCircleLine, RiFileCopy2Line } from "react-icons/ri";
 import styles from "../../styles/Theme.module.scss";
@@ -29,10 +30,12 @@ export default function Header() {
      <div className="container-fluid">
       <div className={styles.left}>
         <Link href="/" passHref>
-          <img
+          <Image
             src={`/thirdweb.svg`}
             alt="Thirdweb Logo"
             className={styles.headerLogo}
+            width={40}
+            height={24}
           />
         </Link>
             <span className="mx-1 btn btn-sm btn-outline-light shadow" data-bs-toggle="dropdown"> {address.slice(0, 2).concat("-").concat(address.slice(-4))}</span>

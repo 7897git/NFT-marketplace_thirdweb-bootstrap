@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { useContractMetadata } from "@thirdweb-dev/react";
 import styles from "../../styles/Theme.module.scss";
 import { MARKETPLACE_ADDRESS } from "../../const/Addresses";
@@ -10,7 +11,7 @@ export default function Home() {
   return (
         <div className={styles.banner}>
             <div className={styles.avatar}>
-                <img className={styles.img_fluid} src={`/electrik.png`} />
+                <Image className={styles.img_fluid} src={`/electrik.png`} alt="avatar" width={100} height={100} />
             </div>
           {!loadingMetadata ? (
             <>

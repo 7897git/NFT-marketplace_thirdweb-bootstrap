@@ -1,4 +1,5 @@
 import { useContractMetadata, useAddress, useMetamask, useWalletConnect, useCoinbaseWallet } from "@thirdweb-dev/react";
+import Link from "next/link";
 import { MARKETPLACE_ADDRESS } from "../../const/Addresses";
 import styles from "../../styles/Theme.module.scss";
 
@@ -27,19 +28,22 @@ export default function Footer() {
       <a role="button" className="btn btn-lg btn-secondary fw-bold border-white bg-white text-bg-light" data-bs-toggle="dropdown">SignIn Wallet</a>
 
   <ul className="dropdown-menu">
-    <li><a className={styles.dropdown_item} onClick={() => connectWithMetamask()}>Metamask<i className={styles.metamask} /></a></li>
-    <li><a className={styles.dropdown_item} onClick={() => connectWithWalletConnect()}>WalletConect<i className={styles.walletconnect} /></a></li>
-    <li><a className={styles.dropdown_item} onClick={() => connectWithCoinbaseWallet()}>CoinBase<i className={styles.coinbase} /></a></li>
+    <li className={styles.dropdown_item} onClick={() => connectWithMetamask()}>Metamask<i className={styles.metamask} /> 
+    </li>
+    <li className={styles.dropdown_item} onClick={() => connectWithWalletConnect()}>WalletConect<i className={styles.walletconnect} /> 
+    </li>
+    <li className={styles.dropdown_item} onClick={() => connectWithCoinbaseWallet()}>CoinBase<i className={styles.coinbase} /> 
+    </li>
   </ul>
     </p>
             </>
           ) : (
-            <p className="lead">authorize...</p>
+            <p className="lead">authorized...</p>
           )}
   </main>
 
   <footer className="mt-auto text-white-50">
-    <p>UnknownNFT <a href="/" className="text-white">marketplace</a>, by <a href="https://thirdeweb.com" className="text-white">thirdweb SDK</a>.</p>
+    <p>UnknownNFT <Link href="/"><a className="text-white">marketplace</a></Link>, by <Link href="https://thirdeweb.com"><a className="text-white">thirdweb SDK</a></Link>.</p>
   </footer>
 </div>
   );

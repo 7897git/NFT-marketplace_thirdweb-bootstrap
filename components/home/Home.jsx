@@ -7,6 +7,7 @@ import {
   useContractMetadata,
   ThirdwebNftMedia,
 } from "@thirdweb-dev/react";
+import Link from "next/link";
 import { RiEqualizerFill } from "react-icons/ri";
 import { StickyContainer, Sticky } from 'react-sticky';
 import Banner from "../../components/banner/Banner"
@@ -35,9 +36,9 @@ export default function Home() {
         {/* Toggle between direct listing and auction listing */}
     <div className={styles.dropbar}>
 <RiEqualizerFill color="#fff" size={45} cursor="pointer" data-bs-toggle="dropdown" className="btn btn-outline border-0" />
-  <ul class="dropdown-menu">
-    <li><a class={styles.dropdown_item} onClick={() => setFilter(0)}>Direct Listing</a></li>
-    <li><a class={styles.dropdown_item} onClick={() => setFilter(1)}>Auction Listing</a></li>
+  <ul className="dropdown-menu">
+    <li className={styles.dropdown_item} onClick={() => setFilter(0)}>Direct Listing </li>
+    <li className={styles.dropdown_item} onClick={() => setFilter(1)}>Auction Listing </li>
   </ul>
     </div>
 
@@ -46,14 +47,16 @@ export default function Home() {
             {listings
               ?.filter((listing) => listing.type === filter)
               ?.map((listing) => (
+            <Link 
+                  key={listing.id.toString()}
+                  href={`/collections/${listing.id}`}>
                 <a
                   className={styles.nftBox}
-                  key={listing.id.toString()}
-                  href={`/collections/${listing.id}`}
                 >
                   <ThirdwebNftMedia
                     metadata={{ ...listing.asset }}
                     className={styles.nftMedia}
+                    alt=""
                   />
                     <div className={styles.nftBox_body}>
                   <h4>{listing.asset.name}</h4>
@@ -63,12 +66,13 @@ export default function Home() {
                   </p>
                     </div>
                 </a>
+            </Link>
               ))}
           </div>
         ) : (
 <div className={styles.loading}>
-        <div class="spinner-border text-light" role="status">
-          <span class="visually-hidden">Loading...</span>
+        <div className="spinner-border text-light" role="status">
+          <span className="visually-hidden">Loading...</span>
         </div>
 </div>
         )}

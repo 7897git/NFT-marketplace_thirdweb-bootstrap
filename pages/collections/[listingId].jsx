@@ -37,8 +37,8 @@ export default function ListingPage() {
 
   if (loadingListing) {
     return <div className={styles.loadingOrError}>
-<div class="spinner-grow text-light" role="status">
-  <span class="visually-hidden">Loading...</span>
+<div className="spinner-grow text-light" role="status">
+  <span className="visually-hidden">Loading...</span>
 </div></div>;
   }
 
@@ -122,6 +122,9 @@ export default function ListingPage() {
           <MediaRenderer
             src={listing.asset.image}
             className={styles.mainNftImage}
+            alt=""
+            width={500}
+            height={500}
           />
         </div>
     <div className="card bg-dark w-100">
@@ -132,12 +135,13 @@ export default function ListingPage() {
             Owned by <b>{listing.sellerAddress?.slice(0, 6)}</b>
           </p>
           </div>
-
-          <h2>
+                <div className={styles.spacerBottom}></div>
+          <h4>
             <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
             {listing.buyoutCurrencyValuePerToken.symbol}
-          </h2>
-<div className={styles.spacer}></div>
+          </h4>
+<span>{listing.asset.description}</span>
+                <div className={styles.spacer}></div>
           <div className={styles.nft_bodyBtn}>
             <button
               style={{ borderStyle: "none" }}

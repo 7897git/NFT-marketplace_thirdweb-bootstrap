@@ -9,6 +9,7 @@ import {
   useCreateDirectListing,
   useCreateAuctionListing,
 } from "@thirdweb-dev/react";
+import Image from "next/image";
 import { MARKETPLACE_ADDRESS } from "../../const/Addresses";
 import { NFT_COLLECTION_ADDRESS } from "../../const/Addresses";
 import { ChainId, NATIVE_TOKEN_ADDRESS } from "@thirdweb-dev/sdk";
@@ -179,10 +180,11 @@ const Create = () => {
 <div className={styles.nft_upload}>
 <div className="card w-100 bg-dark">
           {file ? (
-            <img
+            <Image
               src={URL.createObjectURL(file)}
               style={{ cursor: "pointer", maxHeight: 500, height: '100%', borderRadius: 8 }}
               onClick={() => setFile(undefined)}
+              alt="upload file NFT"
             />
           ) : (
             <div
@@ -242,11 +244,12 @@ const Create = () => {
           />
 
           {/* Sale Price For Listing Field */}
-          <input
+          <textarea
             type="text"
             name="description"
             className="form-control mb-3"
             placeholder="Description"
+            cols="28" rows="5"
             style={{ minWidth: "320px" }}
           />
 
