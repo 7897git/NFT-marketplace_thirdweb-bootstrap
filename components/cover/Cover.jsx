@@ -43,7 +43,7 @@ export default function Footer() {
   </main>
 
   <footer className="mt-auto text-center text-white-50">
-    <p>UnknownNFT <Link href="/"><a className="text-white">marketplace</a></Link>, by <Link href="https://thirdeweb.com"><a className="text-white">thirdweb SDK</a></Link>.</p>
+    <p>UnknownNFT <Link href="/"><a className="text-white">marketplace</a></Link>, by <Link href="https://thirdweb.com" target="_blank"><a className="text-white">thirdweb SDK</a></Link>.</p>
   </footer>
 </div>
   );

@@ -36,6 +36,8 @@ body {
   color: var(--text-color);
   margin: 0;
   text-align: center;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(232,70,252,0.1825105042016807) 100%);
 }
 
 /* Box sizing rules */

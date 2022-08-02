@@ -99,7 +99,7 @@ const Create = () => {
 
       // If the transaction succeeds, take the user back to the homepage to view their listing!
       if (transactionResult) {
-        router.push(`./`);
+        router.push(`/`);
       }
     } catch (error) {
       console.error(error);
@@ -185,6 +185,8 @@ const Create = () => {
               style={{ cursor: "pointer", maxHeight: 500, height: '100%', borderRadius: 8 }}
               onClick={() => setFile(undefined)}
               alt="upload file NFT"
+              width={500}
+              height={500}
             />
           ) : (
             <div

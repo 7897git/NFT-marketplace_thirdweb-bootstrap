@@ -4,6 +4,8 @@
     width: 100%;
     z-index: 999;
     background-color: #121222;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,255,255,0.1825105042016807) 100%);
 }
 
 .dropdown_item {
