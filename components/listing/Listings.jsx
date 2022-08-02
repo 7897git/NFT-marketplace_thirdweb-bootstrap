@@ -240,7 +240,7 @@ const Create = () => {
           <input
             type="text"
             name="name"
-            className="form-control mb-3"
+            className="form-control mb-3 bg-dark text-bg-dark"
             placeholder="Name"
             style={{ minWidth: "320px" }}
           />
@@ -249,7 +249,7 @@ const Create = () => {
           <textarea
             type="text"
             name="description"
-            className="form-control mb-3"
+            className="form-control mb-3 bg-dark text-bg-dark"
             placeholder="Description"
             cols="28" rows="3"
             style={{ minWidth: "320px" }}
@@ -259,11 +259,14 @@ const Create = () => {
           <input
             type="text"
             name="price"
-            className="form-control mb-3"
+            className="form-control mb-3 bg-dark text-bg-dark"
             placeholder="Price (in MATIC)"
             style={{ minWidth: "320px" }}
           />
-<div className={styles.spacer}></div>
+        <div className={styles.spacer}></div>
+        <div class="alert alert-info" role="alert">
+          Setidaknya akan ada 2-3 kali transaksi untuk upload NFT
+        </div>
           <button
             type="submit"
             className={styles.mainButton}

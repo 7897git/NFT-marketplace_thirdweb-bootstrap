@@ -11,7 +11,7 @@ export default function Home() {
   return (
         <div className={styles.banner}>
             <div className={styles.avatar}>
-                <Image className={styles.img_fluid} src={`/thirdweb.svg`} alt="avatar" width={100} height={100} />
+                <Image className={styles.img_fluid} src={`/thirdweb.svg`} alt="avatar" width={50} height={50} />
             </div>
           {!loadingMetadata ? (
             <>

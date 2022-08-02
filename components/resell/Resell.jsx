@@ -101,7 +101,9 @@ export default function Resell() {
         {/* Form Section */}
         <div className={styles.collectionContainer}>
 <div className="card bg-dark p-2 w-100 text-bg-dark">
-          <h4 className={styles.ourCollection}>
+          <h4 style={{
+                    fontSize: "1rem"
+                    }} className={styles.ourCollection}>
             Reselling your NFT to the marketplace use your contract
           </h4>
             <div className={styles.spacerBottom}></div>
@@ -135,7 +137,7 @@ export default function Resell() {
           <input
             type="text"
             name="contractAddress"
-            className="form-control mb-3"
+            className="form-control mb-3 bg-dark text-bg-dark"
             placeholder="NFT Contract Address"
           />
 
@@ -143,7 +145,7 @@ export default function Resell() {
           <input
             type="text"
             name="tokenId"
-            className="form-control mb-3"
+            className="form-control mb-3 bg-dark text-bg-dark"
             placeholder="NFT Token ID"
           />
 
@@ -151,11 +153,14 @@ export default function Resell() {
           <input
             type="text"
             name="price"
-            className="form-control mb-3"
+            className="form-control mb-3 bg-dark text-bg-dark"
             placeholder="Sale Price"
           />
 
             <div className={styles.spacer}></div>
+        <div class="alert alert-info" role="alert">
+          <small>Setidaknya akan ada 2 kali transaksi untuk listing NFT</small>
+        </div>
 
           <button
             type="submit"
