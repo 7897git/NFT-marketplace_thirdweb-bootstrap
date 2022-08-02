@@ -264,7 +264,7 @@ const Create = () => {
             style={{ minWidth: "320px" }}
           />
         <div className={styles.spacer}></div>
-        <div class="alert alert-info" role="alert">
+        <div className="alert alert-info" role="alert">
           Setidaknya akan ada 2-3 kali transaksi untuk upload NFT
         </div>
           <button

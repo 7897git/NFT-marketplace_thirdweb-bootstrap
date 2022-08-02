@@ -158,7 +158,7 @@ export default function Resell() {
           />
 
             <div className={styles.spacer}></div>
-        <div class="alert alert-info" role="alert">
+        <div className="alert alert-info" role="alert">
           <small>Setidaknya akan ada 2 kali transaksi untuk listing NFT</small>
         </div>
 
