@@ -47,7 +47,7 @@ export default function Header() {
           className={styles.textForm}
           cols="28" rows="2"
           ref={textAreaRef}
-          value='0x9B45233CB9ecA509a278A9eD406578E8eEb15d17'
+          value='0xD0bF80D66A78f38667711a8eC0AbE2248773908D'
         />
       </form>
       {
