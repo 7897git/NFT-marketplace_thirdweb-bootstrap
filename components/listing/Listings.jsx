@@ -51,7 +51,7 @@ const Create = () => {
 
       // Ensure user is on the correct network
       if (networkMismatch) {
-        switchNetwork?.(ChainId.Mumbai);
+        switchNetwork?.(ChainId.Fantom);
         return;
       }
 
@@ -260,7 +260,7 @@ const Create = () => {
             type="text"
             name="price"
             className="form-control mb-3 bg-dark text-bg-dark"
-            placeholder="Price (in MATIC)"
+            placeholder="Price (in FTM)"
             style={{ minWidth: "320px" }}
           />
         <div className={styles.spacer}></div>

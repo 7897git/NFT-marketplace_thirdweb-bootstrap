@@ -10,11 +10,11 @@ export default function Home() {
 
   return (
         <div className={styles.banner}>
-            <div className={styles.avatar}>
-                <Image className={styles.img_fluid} src={`/thirdweb.svg`} alt="avatar" width={50} height={50} />
-            </div>
           {!loadingMetadata ? (
             <>
+            <div className={styles.avatar_banner}>
+                <Image className={styles.img_fluid} src={contractMetadata?.image} alt="avatar" width={50} height={50} />
+            </div>
               <h1>{contractMetadata?.name}</h1>
               <p>{contractMetadata?.description}</p>
             </>

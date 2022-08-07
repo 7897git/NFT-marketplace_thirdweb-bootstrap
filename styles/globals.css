@@ -3,7 +3,7 @@
 /* Change the values in here to match your branding */
 :root {
   /* Background color of the page */
-  --background-color: #1c1e21;
+  --background-color: rgba(255, 255, 255, 0.32);
 
   /* Color of the text/words */
   --text-color: #fff;
@@ -36,8 +36,6 @@ body {
   color: var(--text-color);
   margin: 0;
   text-align: center;
-  background: rgb(63,94,251);
-  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(232,70,252,0.1825105042016807) 100%);
 }
 
 /* Box sizing rules */
@@ -62,7 +60,7 @@ input:hover&&input:focus {border: 1px dotted #fff;border-color: #418dff;backgrou
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #121222; 
+  background: rgba(0,0,0,0.8); 
   border-radius: 8px;
 }
 

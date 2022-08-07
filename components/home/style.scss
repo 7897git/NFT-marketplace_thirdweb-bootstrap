@@ -8,6 +8,23 @@
     }
 }
 
+.dFlex {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5px;
+}
+
+.dChip {
+    border: 1px solid #666;
+    background: aliceblue;
+    font-weight: 600;
+    width: fit-content;
+    margin: auto;
+    padding: 5px 6px;
+    border-radius: 25px;
+}
+
 .dropbar {
     display: flex;
     width: fit-content;
@@ -18,6 +35,7 @@
     position: sticky;
     top: 55px;
     box-shadow: 1px 2px 20px -2px #ffffff75;
+    z-index: 99999;
 }
  
 .is_sticky {
@@ -52,7 +70,19 @@ img.nftMedia:hover {
   transform: translateY(20px) scale(1.15);
   transform-origin: 50% bottom;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-@include mobile {transform: translateY(5px) scale(1.1);}
+@include mobile {transform: translateY(0px) scale(0);}
+}
+
+.avatar {
+    border-radius: 50px;
+    border: 5px solid #686b6e;
+    background-image: $avatar;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .nftMedia {
@@ -60,8 +90,8 @@ img.nftMedia:hover {
     width: 100%;
     height: 350px;
     object-position: center;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .nftBox_body {
@@ -70,10 +100,19 @@ img.nftMedia:hover {
     margin-top: 5px;
     background: #ffffffb5;
     color: #8b8b8b;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
+
 .loading {
     margin: auto;
     text-align: center;
+}
+
+.ava {
+    position: absolute;
+    left: 15px;
+    bottom: 90px;
+    border: 0px solid #fff;
+    border-radius: 5px;
 }

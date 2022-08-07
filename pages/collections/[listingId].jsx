@@ -50,7 +50,7 @@ export default function ListingPage() {
     try {
       // Ensure user is on the correct network
       if (networkMismatch) {
-        switchNetwork && switchNetwork(ChainId.Mumbai);
+        switchNetwork && switchNetwork(ChainId.Fantom);
         return;
       }
 
@@ -59,7 +59,7 @@ export default function ListingPage() {
         await marketplace?.direct.makeOffer(
           listingId, // The listingId of the listing we want to make an offer for
           1, // Quantity = 1
-          NATIVE_TOKENS[ChainId.Mumbai].wrapped.address, // Wrapped Ether address on Rinkeby
+          NATIVE_TOKENS[ChainId.Fantom].wrapped.address, // Wrapped Ether address on Rinkeby
           bidAmount // The offer amount the user entered
         );
       }
@@ -89,7 +89,7 @@ export default function ListingPage() {
     try {
       // Ensure user is on the correct network
       if (networkMismatch) {
-        switchNetwork && switchNetwork(ChainId.Mumbai);
+        switchNetwork && switchNetwork(ChainId.Fantom);
         return;
       }
 
@@ -131,15 +131,15 @@ export default function ListingPage() {
         <div className={styles.rightListing}>
     <div className={styles.nft_titlePrice}>
           <h2>{listing.asset.name}</h2>
-          <p>
+          <small>
             Owned by <b>{listing.sellerAddress?.slice(0, 6)}</b>
-          </p>
+          </small>
           </div>
                 <div className={styles.spacerBottom}></div>
-          <h4>
+          <h6 className={`${styles.dFlex} ${styles.dChip}`} style={{margin: '0 0 15px', color: '#000'}}><i className={styles.ftm}></i>
             <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
             {listing.buyoutCurrencyValuePerToken.symbol}
-          </h4>
+          </h6>
                     <span className={styles.nft_description}>{listing.asset.description}</span>
                 <div className={styles.spacer}></div>
           <div className={styles.nft_bodyBtn}>

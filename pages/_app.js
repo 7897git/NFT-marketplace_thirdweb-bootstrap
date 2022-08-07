@@ -5,7 +5,7 @@ import "../styles/globals.css";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 
-const activeChainId = ChainId.Mumbai;
+const activeChainId = ChainId.Fantom;
 
 function MyApp({ Component, pageProps }) {
 

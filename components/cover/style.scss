@@ -30,7 +30,7 @@
 }
 
 .metamask {
-    background: url(../../public/icons/metamask.svg);
+    background: $metamask;
     display: block;
     width: 18px;
     height: 18px;
@@ -39,7 +39,7 @@
 }
 
 .walletconnect {
-    background: url(../../public/icons/walletconnect.svg);
+    background: $walletconnect;
     display: block;
     width: 18px;
     height: 18px;
@@ -49,10 +49,20 @@
 }
 
 .coinbase {
-    background: url(../../public/icons/coinbase.svg);
+    background: $coinbase;
     display: block;
     width: 18px;
     height: 18px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ftm {
+    background: $ftm;
+    display: block;
+    width: 24px;
+    height: 24px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

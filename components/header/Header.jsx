@@ -26,16 +26,16 @@ export default function Header() {
 <>
         {address ? (
           <>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
      <div className="container-fluid">
       <div className={styles.left}>
         <Link href="/" passHref>
           <Image
-            src={`/thirdweb.svg`}
+            src={`/logo.png`}
             alt="Thirdweb Logo"
             className={styles.headerLogo}
-            width={40}
-            height={24}
+            width={100}
+            height={34}
           />
         </Link>
             <span className="mx-1 btn btn-sm btn-outline-light shadow" data-bs-toggle="dropdown"> {address.slice(0, 2).concat("-").concat(address.slice(-4))}</span>
@@ -76,10 +76,7 @@ export default function Header() {
             <RiLogoutCircleLine className="btn btn-sm btn-outline-light p-1 shadow" size={32} cursor="pointer" onClick={disconnectWallet} title="disconnect" />
           </>
         ) : (
-          <a
-            className={styles.hidden}
-            onClick={() => connectWithMetamask()}
-          >
+          <a className={styles.hidden} onClick={() => connectWithMetamask()}>
             Connect Wallet
           </a>
         )}
@@ -89,6 +86,7 @@ export default function Header() {
           </>
         ) : (
 <>
+<div className={styles.hidden}></div>
 </>
         )}
 </>
