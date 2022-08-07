@@ -11,6 +11,7 @@ const activeChainId = ChainId.Fantom;
 function MyApp({ Component, pageProps }) {
 
 useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle");
 }, []);
 
   return (
